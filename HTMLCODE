@@ -5,8 +5,8 @@
 
 <style>
 body{
-	background-image: radial-gradient(circle, lime 1% , blue 70%);
-	
+	background-image: linear-gradient(to right, blue, #33cccc);
+
 
 }
 ul {
@@ -32,17 +32,31 @@ li a {
 li a:hover {
   background-color: #111;
 }
-
+.plr {
+width: 300px;
+height: 300px;
+}
+.lca {
+width: 20px;
+height: 20px;
+}
 
 </style>
 </head>
 <body>
 	<ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="#home">Map</a></li>
   <li><a href="">About our idea</a></li>
   
 </ul>
 
+
+
+<img src="map.jpg" class="plr" alt="MapB" usemap="#mapofbulgaria">
+
+<map class="plr" name="mapofbulgaria">
+	<area class="lca" shape="circle" coords="635," href="#burgas" alt="Burgas">
+</map>
 
 </body>
 </html>
